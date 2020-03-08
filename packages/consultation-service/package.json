@@ -1,0 +1,23 @@
+{
+  "name": "consultation-service",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "James Henshaw",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -e ts,graphql -x ts-node src/index.ts",
+    "debug": "nodemon -e ts,graphql -x ts-node --inspect src/index.ts",
+    "build": "rimraf dist && tsc"
+  },
+  "dependencies": {
+    "@apollo/federation": "0.12.1",
+    "apollo-server": "2.10.1",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.2",
+    "ts-node": "8.6.2",
+    "typescript": "3.8.3"
+  }
+}
